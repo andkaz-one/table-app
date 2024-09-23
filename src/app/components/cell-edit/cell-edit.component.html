@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>Dialog with elements</h2>
+<mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Change value</mat-label>
+    <input matInput [(ngModel)]="value">
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button mat-dialog-actions (click)="submit()">Save</button>
+</mat-dialog-actions>
